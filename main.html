@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fath10 Personal Website</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body class="light">
+  <header>
+    <div class="header-left">
+      <a href="https://github.com/Fath10" target="_blank">
+        <img src="pp.png" alt="GitHub" class="icon-small" />
+      </a>
+    </div>
+    <div class="header-middle">Get to know me</div>
+    <div class="header-right">
+      <img id="modeToggle" src="sun.png" alt="Toggle Mode" class="icon-small" />
+    </div>
+  </header>
+
+  <section id="selection">
+    <div class="overlay"></div>
+    <h1>Welcome</h1>
+    <div class="buttons">
+      <a href="#game"><img src="gamepad.png" class="circle-btn" alt="Game" /></a>
+      <a href="#profile"><img src="person.png" class="circle-btn" alt="Profile" /></a>
+      <a href="#music"><img src="music.png" class="circle-btn" alt="Music" /></a>
+    </div>
+    <p>Select what you want to know</p>
+  </section>
+
+  <section id="game">
+    <h2>Game</h2>
+    <img src="gamepad.png" class="icon-large" alt="Game" />
+    <div class="description-box">
+    <p>Muhammad Akmal Al Fathan is an Informatics student at Institut Teknologi Kalimantan with a strong interest in web design and game development. Born in Balikpapan on June 10, he is passionate about creating digital experiences, both through engaging websites and interactive games. In his free time, he enjoys gaming and reading manga, which also inspire his creativity and ideas in developing games. My top 3 games are :</p>
+    </div>
+    <div class="top-list">
+      <img src="starrail.png" alt="Honkai Star Rail" />
+      <img src="persona.png" alt="Persona 4" />
+      <img src="tekken.png" alt="Tekken" />
+    </div>
+    <a href="#selection" class="back-btn">Back</a>
+  </section>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <img src="person.png" class="icon-large" alt="Profile" />
+    <div class="description-box">
+    <p>Muhammad Akmal Al Fathan is an Informatics student at Institut Teknologi Kalimantan with a strong interest in web design and game development. Born in Balikpapan on June 10, he is passionate about creating digital experiences, both through engaging websites and interactive games. In his free time, he enjoys gaming and reading manga, which also inspire his creativity and ideas in developing games. He's also a fan of manchester united fc and evos esport.</p>
+    </div>
+    <div class="top-list">
+      <a href="https://www.manutd.com/" target="_blank">
+        <img src="manutd.png" class="circle-btn-small" alt="MU" />
+      </a>
+      <a href="https://www.evos.gg/" target="_blank">
+        <img src="evos.png" class="circle-btn-small" alt="EVOS" />
+      </a>
+    </div>
+    <a href="#selection" class="back-btn">Back</a>
+  </section>
+
+  <section id="music">
+    <h2>Music</h2>
+    <img src="music.png" class="icon-large" alt="Music" />
+    <div class="description-box">
+    <p>I enjoy rap, J-song, and Indonesian pop the most, but I casually listen to almost any trending song. My playlist is a mix of energetic beats, catchy melodies, and whatever sounds good at the moment, from rock music to upbeat dance tracks that match my mood and activities. My top 3 artist are :</p>
+    </div>
+    <div class="top-list">
+      <img src="fujiikaze.png" alt="Fujii Kaze" />
+      <img src="tyler.png" alt="Tyler, The Creator" />
+      <img src="moona.png" alt="Moona Hoshinova" />
+    </div>
+    <a href="#selection" class="back-btn">Back</a>
+  </section>
+
+  <footer>
+    <div class="footer-left">Fath10 Personal Website</div>
+    <div class="footer-right">
+      <a href="https://www.instagram.com/imalfath/" target="_blank"><img src="instagram.png" alt="Instagram" /></a>
+      <a href="https://www.youtube.com/@fath3408" target="_blank"><img src="youtube.png" alt="YouTube" /></a>
+      <a href="https://facebook.com/akmal.fathan.967" target="_blank"><img src="facebook.png" alt="facebook" /></a>
+    </div>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      if (body.classList.contains('dark')) {
+        toggleBtn.src = 'moon.png';
+      } else {
+        toggleBtn.src = 'sun.png';
+      }
+    });
+  </script>
+</body>
+</html>
